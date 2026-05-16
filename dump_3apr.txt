@@ -1,0 +1,612 @@
+#Append
+#a = [1,2,3,10,5,100,1]
+#a.append(4) # adds number 4 along with VAR a values
+#a.extend([4,5,6]) # add number 4,5,6 along with VAR a values
+#a.sort()# sort
+#print(a)
+#a.sort(reverse = True)
+#a.remove(100) # remove # here is not uses py element numbering it actually remove 100 from a VAR and print remaining
+#print(a)
+
+#slicing
+#print(a[0:2]) # first 2 elements
+
+#Nested List
+#x = [[1,2], [3,4], [5,6]]
+#print(x[0][1]) # 2
+#print(x[1][0])
+#print(x[2][1])
+
+#List Comprehension
+#squares = [x*x for x in range(9)]
+#0,1,2,3,4 #here * means square / power
+
+#print(squares)
+#cubes= [x*x / 2  for x in range(5)]
+#print(cubes)#Arithmatic(mathematical caluculations + ) and comparision
+#print(2*32/8*2+4+10-10) # calculations
+#print(19%5) #mod operator to find reminder / to find even or odd numbers
+print(2**3)  #double start is used to use power function like 2*2*2
+"""
+collections
+In Python, a collection is a group of multiple values (elements) stored together in a single variable.
+Instead of storing items separately, collections let you manage them as one unit.
+In Python, a list is a type of collection used to store multiple items in a single variable.
+Key features of a list
+Ordered → items keep their position
+Mutable → you can change, add, or remove items
+Allows duplicates → same value can appear multiple times
+Example of a list
+numbers = [1, 2, 3, 4]
+names = ["Aman", "Riya", "John"]
+"""
+#Create List
+a = [1, 2, 3] #these are elements
+b = ["bhanu kiran ankam", "b", "9949532020"] #these are elements
+#Access
+print(a[0]) # 1
+print(b[1:2]) #this is splicing
+#the 2 here has hidden -1 (minus 1) so 2 will become 1 so n-1 whatever number you mentioned python
+#applyes -1 and prints that value#comparision operator
+#used to compare values (result is true or false)
+#eual to operator
+print(5==5)
+print(5==6)
+print(5!=5)
+print(5!=6)
+#greaterhan /Less than or both sign
+print(5>5) #false
+print(5>6) #false
+print(5<5)
+print(5<6)
+print(5>=5)
+print(5<=4)star='*'
+hash='#'
+for i in range(1,11):
+    print(star*i)#nums = [1,2,3,4]
+#even = [d for d in nums if d % 2 == 0]
+#print(even)
+
+#From a list nums = [10, 15, 20, 25, 30], create a new list of numbers divisible by 5.
+#nums = [10, 15, 20, 25, 30, 11, 50]
+#div = [x for x in nums if x % 5 == 0]
+#print(div)
+
+#From nums = [-3, -1, 0, 2, 4], create a list that removes negative numbers.
+nums = [-3, -1, 0, 2, 4]
+rnn = [x for x in nums if x >= 0]
+print(rnn)for x in range(0,11,2):
+    print(x)
+#range has three paramenters
+
+"""
+In Python, the built-in function Python range() can take three parameters: start, stop, and step.
+start: the number where the sequence begins
+stop: the number where the sequence ends (not included)
+step: the difference between each number in the sequence
+Example: range(1, 10, 2) gives numbers from 1 to 9, increasing by 2
+"""
+#1.
+#---
+marks=float(input("Enter: "))
+if marks >= 90:
+    print("A")
+elif marks >= 75:
+    print("B")
+elif marks >= 50:
+    print("C")
+else :
+    print("Fail")
+
+"""
+2.
+---
+A = 90
+B = 750
+C = 5000
+if (A > B) and (A > C):
+    print ("A is Largest of three")
+elif (B > C) and (B > A):
+    print ("B is Largest of three")
+else :
+    print ("C is Largest")
+
+"""
+"""
+#4
+#4. Write a program to calculate a discount and print it.
+
+#   * If amount ≥ 1000 → 10% discount
+#   * Otherwise → no discount
+
+amount=float(input("Enter amount:"))
+
+if amount >= 1000:
+    discount=amount / 100 * 10 #variable
+    discounted_price=amount - discount #variable
+    print("discount is",discount) #("between the quotes normal text and", variable)
+    print("discounted price is",discounted_price)#("between the quotes normal text and", variable)
+else :
+    print("no discount")
+"""
+"""
+#3. Write a program to check if a year is a leap year.
+input=int(input("Ënter year: "))
+#print(input)
+if input % 4 == 0:
+    print (input,"is leap year")
+else :
+    print(input,"is not leap year")
+
+"""
+"""
+5.
+---
+amount=float(input("Enter amount:"))
+if amount >= 1000:
+    print("10% discount")
+else :
+    print("no discount")
+"""
+#input=int(input("Enter number:"))
+#print(type(input))
+
+"""
+#7.
+A=int(input("enter a number : "))
+B=int(input("enter another number : "))
+operator=input("enter operator:")
+if operator == "+":
+    print(A + B)
+elif operator == "-":
+    print(A - B)
+elif operator == "*":
+    print(A * B)
+elif operator == "/":
+    print(A / B)
+else :
+    print("bye")
+
+
+temp=float(input("enter temp:"))
+if temp > 30:
+    print("Hot")
+#elif temp (>20=30):
+#    print ("warm")
+#elif temp <20:
+#    print ("Cold")
+else :
+    print("Thanks")
+   """
+"""
+#8
+charecter=input("Enter letter:")
+print(charecter)
+if charecter in ["a", "e", "i", "o", "u"]:
+    print("Entered value is Vowel")
+else :
+    print("bye")
+
+
+#---
+
+"""
+"""
+number=float(input("Enter number: "))
+if number == 1:
+    print("Monday")
+elif number == 2:
+    print("Tuesday")
+elif number == 3:
+    print("Wednesday")
+elif number == 4:
+    print("Thursday")
+elif number == 5:
+    print("Friday")
+elif number == 6:
+    print("Saturday")
+elif number == 7:
+    print("Sunday")
+else :
+    print("enter between 1-7")
+"""
+
+"""
+#11. Write a program to check whether a number is a three-digit number or not.
+numb=float(input("Enter number :"))
+if numb >= 100:
+    print("number is three digit", numb)
+elif numb <= 99:
+    print("number is not three digit", numb)
+else :
+    print("bye")
+"""
+"""
+#9. Write a program to check if a character is a vowel or consonant.
+
+#char=str(input("enter character :"))
+#print(char)
+#if (char == 'a') or (char == 'e') or (char == 'o') or (char == 'i') or (char == 'u'):
+#    print("its Vowel")
+#else :
+#    print("its consonant")
+
+
+
+ch = input("Enter a character: ").lower()
+
+if ch in 'aeiou':
+    print("Vowel")
+else:
+    print("Consonant")
+"""
+"""
+#1. Create a list of numbers from 1 to 5 and print the third element.
+
+nums = [i for i in range(1,6)]
+#nums = [1,2,3,4,5]
+print(nums)
+print(nums[2])
+
+
+"""
+#2. Write a program to add an element `10` to a list and then sort it.
+"""
+#2. Write a program to add an element `10` to a list and then sort it.
+
+#nums = [i for i in range(6)]
+nums = [5,2,8,1,6]
+nums.append(100)
+nums.sort()
+print(nums)
+
+"""
+"""
+#3. Given `a = [1,2,3,4,5]`, use slicing to print the last 3 elements.
+a = [1,2,3,4,5]
+print(a[2:5])
+
+"""
+"""
+#4. Create a nested list and access the element `4` from `[[1,2],[3,4]]`.
+a = [[1,2],[3,4],[5,6]]
+print(a[1][1],a[2][0])
+
+"""
+#5. Using list comprehension, create a list of squares for numbers from 1 to 6.
+squares = [i*i for i in range(1,7) if i % 2 == 0]
+squares = [i*i for i in range(1,7) if i % 2 != 0] #opposite of even
+print(squares)
+
+"""
+"#Identity
+#is is not
+a = 50
+b = 50
+print(a is b) # True
+
+a = 50
+b = 50
+print(a is not b) # True
+
+#In Python, identity operators check whether two variables refer to the same object in memory, not just equal values."""
+#1. if, elif, else#
+👉 Used to make decisions
+🧠 Syntax:
+if condition:
+    # do something
+elif condition:
+    # do something else
+else:
+    # do this if nothing is true
+    """
+"""
+B = 10000
+if B == 10:
+    print("B is 10")
+elif B == 100:
+    print("B is 100")
+else :
+    print("B is something else")
+    """
+#2. Nested if
+#👉 if inside another if
+#✅ Example:
+
+""""
+B = 11
+if B > 0:
+    if B % 2 == 0:
+        print("B is even")
+    elif B % 2 == 1:
+        print("B is odd")
+else :
+    print("something else")
+""#List Comprehension
+#squares = [x*x for x in range(5)]
+#print(squares)
+
+
+nums = [1,2,3,4]
+even = [z+5 for z in nums if z % 2 == 0]
+print(even)
+
+"""
+#creation of the list
+List comprehension in Python is a concise way to create lists using a single line of code.
+It combines a loop and optional condition into one expression.
+Syntax: [expression for item in iterable if condition]
+It is used to make code shorter and more readable.
+
+In Python, for is not a “command” — it is a keyword.
+It is used to create a loop (called a for loop)
+It lets you iterate over items like lists, strings, or ranges
+It repeats a block of code for each item in a sequence
+"""#logical operators
+#use to combine conditions
+print(True and False)
+print(False and True)
+print(False and False)
+print(True and True)
+
+print(True or False)
+print(False or True)
+print(True or True)
+print(False or False)#and operator
+input1=False
+input2=False
+result=input1 and input2
+print(result)
+
+input1=False
+input2=True
+result=input1 and input2
+print(result)
+
+input1=True
+input2=True
+result=input1 and input2
+print(result)
+
+input1=True
+input2=False
+result=input1 and input2
+print(result)#not operator
+input1=True
+input2=False
+result=(not input1)
+print(result)
+
+input1=True
+input2=False
+result=(not input2)
+print(result)
+
+#it reversed the input
+
+x=3
+#print(x > 2 and x < 10)  # True (both conditions are True)
+#print(x > 2 and x > 10)  # False (second condition is False)
+
+#usecases#or operator
+input1=True
+input2=False
+result=(input1 or input2)
+print(result)
+
+input1=False
+input2=True
+result=(input1 or input2)
+print(result)
+
+input1=True
+input2=True
+result=(input1 or input2)
+print(result)
+
+input1=False
+input2=False
+result=(input1 or input2)
+print(result)#membership operator
+
+#what is meant by membership operator ?
+#in Python, membership operators are used to check whether a value exists inside a sequence (like string, list, tuple, set, etc.).
+
+#print("a" in "apple")
+#print("p" in "apple")
+#print("el" in "apple")
+
+#its like grep in linux it finds a p el and in the apple
+
+print("a" not in"apple")
+print("p" not in "apple")
+print("el" not in "apple")A = 90
+B = 75
+C = 50
+"""
+result=float(input("Enter Marks: "))
+if result >= 90:
+    print("Grade A")
+elif result >= 75:
+    print("Grade B")
+elif result >=50:
+    print("Grade C")
+else :
+    print("Fail")
+"""
+#2. Write a program to find the largest of three numbers.
+
+A = 1000
+B = 7500
+C = 500
+D = 2500
+if (A > B) and (A > C) and (A > D):
+    print("A is Largest")
+elif (B > C) and (B > D) and (B > A):
+    print("B is Largest")
+elif (C > D) and (C > A) and (C > b):
+    print ("C is Largest")
+else :
+    print("D is Largest")#or condition
+#x=
+#print(x > 2 or x > 10)   # True (first condition is True) range is 3-9 only
+#print(x < 2 or x > 10)   # False (both are False) range is any number
+
+#not condition
+#x=1
+#print(not(x > 2))  # False (because x > 2 is True)
+#print(not(x < 2))  # True (because x < 2 is False)
+
+#string
+#how to create a string and elements of string
+#Create String
+s = "Hello Bhanu"
+#print(s[0]) # H
+#print(s[1]) # H
+#print(s[2]) # H
+#print(s[3]) # H
+#print(s[4]) # H
+#print(s[6]) # H
+
+#it will consider space as well
+
+
+#slicing
+print(s[1:4]) # Hel
+#s=variable#String Methods
+#s = "Hello This is Bhanu Kiran"
+#print(s.lower()) # hello
+#print(s.upper()) # HELLO
+
+#formatting
+name = "Ram"
+print(f"Hellooo {name}")
+
+#definted variable name
+#f is formatting string
+#formatting string should be start with " and close with " if there is variable then it should be in { }
+#6
+#numbers = [i for i in range(1,51) if i % 5 == 0]
+#print(numbers)
+
+#7
+#numbers2 = [i*i for i in range(1,11)]
+#print(numbers2)
+
+#8
+#numbers2 = [i for i in range(1,31) if (i % 3 == 0) and (i % 2 != 0)]
+#print(numbers2)
+
+#9
+star='*'
+for i in range(1,6):
+    print(i*star)
+
+#10
+#for i in reversed(range(50,101,5)):
+#    print(i)"""
+#tuples packing
+Simple definition:
+A tuple is an ordered collection of items that cannot be changed (immutable).
+Example:
+my_tuple = (1, 2, 3)
+Items are in a fixed order
+You cannot modify them after creation
+It can store different types of data (numbers, text, etc.)
+Packing / Unpacking
+a = (1, 2, 3) # packing
+x, y, z = a # unpacking
+"""
+a = (0, 1, 2, 3, 4, 5) # packing
+x, y, *z = a # unpacking
+print(a)
+print(x,y,z)
+print(type(x))
+print(type(y))
+print(type(z))#tuples
+"""
+In Python, a tuple is a collection of items that is ordered and immutable (cannot be changed after creation).
+Written using parentheses ()
+Can store multiple values of different data types
+Once created, you cannot add, remove, or change elements
+Example:
+t = (1, 2, 3, "apple")
+"""
+#t = (1, 2, 3, "apple")
+#print(t)
+#print(type(t))
+#t = (1, 2, 3)
+#print(t)
+#print(type(t))
+t = ("apple","Mango","Banana","Mango","Mango","Mango","Mango","Mango")
+#print(t)
+#print(type(t))
+
+#accessing element in tuples
+#print(type(t))
+#print(t[1])
+
+#tuple methods
+#print(t.count("apple"))
+
+#index
+#print(t.index("Banana"))
+t[0] = 5#HW3
+numbers = [i for i in range(10)]
+print(numbers)
+
+#2
+numbers = [i for i in range(1,20) if i % 2 == 1]
+print(numbers)
+
+#3
+numbers = [i for i in reversed(range(1,11))]
+print(numbers)
+
+### 4️⃣ Calculate the sum of the first 20 natural numbers
+#Sum = 1 + 2 + ... + 20 = 210
+#4
+"""
+lst_num = [i for i in range(1,21)]
+total=0
+for num in lst_num:
+    total=total+num
+print(total)
+
+
+total=0
+for num in range(1,21):
+    total=total+num
+print(total)
+
+"""
+
+"""
+number=int(input("Enter number :"))
+for i in range(1,11):
+    print(i,"x",number, "=", number * i)
+
+
+"""#user input
+#use to take input from user
+a=float(input("Enter Number : "))
+b=float(input("Ënter Number : "))
+print(a+b)
+print(type(a+b))
+#why float is needded here bcz without that output will be 3.45.876 (assuming input is 1.4 and 5.876)  # string concatenation (wrong for math)
+print("Integer")
+VAR1=2026
+print(VAR1)
+print(type(VAR1))
+print("Float")
+VAR2=20.5
+print(VAR2)
+print(type(VAR2))
+print("String")
+VAR3="today is 1st class of py"
+print(VAR3)
+print(type(VAR3))
+print("boolean")
+VAR4=True
+print(VAR4)
+print(type(VAR4))

@@ -1,0 +1,16 @@
+print("Integer")
+VAR1=2026
+print(VAR1)
+print(type(VAR1))
+print("Float")
+VAR2=20.5
+print(VAR2)
+print(type(VAR2))
+print("String")
+VAR3="today is 1st class of py"
+print(VAR3)
+print(type(VAR3))
+print("boolean")
+VAR4=True
+print(VAR4)
+print(type(VAR4))

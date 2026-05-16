@@ -1,0 +1,5 @@
+#!/bin/bash
+CS='$1'
+echo $CS
+RIDRAW=$(mysql -u username -p -D database_name -e "SELECT DISTINCT rack_id FROM servers WHERE serial_port LIKE '$CS:%';")
+print $RIDRAW
